@@ -1,0 +1,18 @@
+# fly.toml file generated for gpsaplicaciones-teltonika on 2023-02-27T13:39:50-07:00
+
+app = "gpsaplicaciones-teltonika"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 5000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "5000"

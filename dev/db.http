@@ -1,0 +1,8 @@
+
+### Get all devices
+curl --location --request GET '{{ttk-base_url}}/db/device' \
+--header 'x-api-key: {{ttk-apiKey}}' \
+
+### Get device by serial
+curl --location --request GET '{{ttk-base_url}}/db/device/860896050833326' \
+--header 'x-api-key: {{ttk-apiKey}}' \
